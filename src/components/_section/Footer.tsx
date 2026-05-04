@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="w-[85%] lg:w-full font-bold text-lg md:text-8xl text-center whitespace-normal mr-4 lg:mr-0 ">
             <RevealText text="Love," trigger="viewport" duration={0.5} />
             <RevealText
-              text="Cindia & Robby"
+              text="Swathi & Mani"
               trigger="viewport"
               duration={0.5}
             />
