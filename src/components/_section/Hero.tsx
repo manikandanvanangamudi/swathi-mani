@@ -20,7 +20,7 @@ interface HeroProps {
  */
 const Greeting = ({ revealed }: { revealed: boolean }) => {
   const searchParams = useSearchParams();
-  const to = searchParams.get("to") || "Tamu";
+  const to = searchParams.get("to") || "Guest";
 
   return (
     <div className="flex flex-col">
@@ -87,7 +87,7 @@ const Hero = ({ revealed = false }: HeroProps) => {
               className={`${parisienne.className} text-8xl lg:text-9xl font-black`}
             >
               <RevealText
-                text="Cindia"
+                text="Swathi"
                 duration={0.3}
                 stagger={0.15}
                 mode="sentence"
@@ -113,7 +113,7 @@ const Hero = ({ revealed = false }: HeroProps) => {
               className={`${parisienne.className} text-8xl lg:text-9xl font-black`}
             >
               <RevealText
-                text="Robby"
+                text="Mani"
                 duration={0.3}
                 stagger={0.15}
                 delay={1.1}
