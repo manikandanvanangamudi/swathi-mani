@@ -61,7 +61,7 @@ export default function Home() {
       >
         <audio ref={audioRef} loop autoPlay controls className="hidden">
           <source
-            src="https://wedding-api.storyofbari.com/uploads/Lagu-Cide.mp3"
+            src="/wedding-song.mp3"
             type="audio/mpeg"
           />
           Browser Anda tidak mendukung elemen audio.
