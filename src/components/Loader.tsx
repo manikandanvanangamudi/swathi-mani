@@ -150,7 +150,7 @@ export default function WeddingLoader({ onComplete }: WeddingLoaderProps) {
           <div className="flex-1 h-px bg-white/20" />
         </div>
 
-        {/* "Cindia & Robby" — main title */}
+        {/* "Swathi & Mani" — main title */}
         <h1
           className={[
             `${parisienne.className} text-white leading-[1.1]`,
@@ -161,7 +161,7 @@ export default function WeddingLoader({ onComplete }: WeddingLoaderProps) {
               : "opacity-0 translate-y-6",
           ].join(" ")}
         >
-          Cindia &amp; Robby
+          Swathi &amp; Mani
         </h1>
 
         {/* Date */}
@@ -175,10 +175,10 @@ export default function WeddingLoader({ onComplete }: WeddingLoaderProps) {
               : "opacity-0 translate-y-6",
           ].join(" ")}
         >
-          02 · Mei · 2026
+          17 · June · 2026
         </p>
 
-        {/* Buka Undangan button */}
+        {/* Open Invitation button */}
         <button
           onClick={handleOpenInvitation}
           className={[
@@ -195,7 +195,7 @@ export default function WeddingLoader({ onComplete }: WeddingLoaderProps) {
           <span className="transition-opacity duration-500 opacity-50 group-hover:opacity-100">
             <EnvelopeIcon />
           </span>
-          Buka Undangan
+          Open Invitation
         </button>
       </div>
     </div>
