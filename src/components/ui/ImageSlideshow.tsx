@@ -76,7 +76,7 @@ export default function ImageSlideshow({
             fill
             priority={index === 0}
             sizes="100vw"
-            className={`object-contain ${imgClassName}`}
+            className={`object-cover ${imgClassName}`}
           />
         </div>
       ))}
