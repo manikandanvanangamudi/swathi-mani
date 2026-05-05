@@ -10,50 +10,6 @@ const secondFont = Luxurious_Script({
 const AboutUs = () => {
   return (
     <div className="w-full md:w-[90%] lg:w-[75%] flex flex-col gap-8 lg:gap-16 text-black justify-center items-center mx-auto">
-      <div className="flex flex-col" id="greeting-section">
-        <div className="flex flex-col justify-around px-4">
-          <p className="text-xs font-bold md:text-2xl text-center">
-            <RevealText
-              text={"Coming Soon…"}
-              duration={0.3}
-              stagger={0.15}
-              mode="sentence"
-              trigger="viewport"
-            />
-          </p>
-
-          <p className="text-xs font-bold md:text-xl text-center">
-            <RevealText
-              text="Warahmatullahi Wabarakatuh"
-              duration={0.3}
-              stagger={0.15}
-              mode="sentence"
-              trigger="viewport"
-            />
-          </p>
-
-          <p className="text-xs md:text-2xl text-center">
-            <RevealText
-              text={"Dengan rahmat Allah SWT, kami mengundang"}
-              duration={0.3}
-              stagger={0.15}
-              mode="sentence"
-              trigger="viewport"
-            />
-          </p>
-
-          <p className="text-xs md:text-xl text-center">
-            <RevealText
-              text="Bapak/Ibu/Saudara/i untuk hadir dalam pernikahan kami:"
-              duration={0.3}
-              stagger={0.15}
-              mode="sentence"
-              trigger="viewport"
-            />
-          </p>
-        </div>
-      </div>
-
       <div className="flex items-center gap-3 w-35 opacity-100 scale-x-100 mx-auto">
         <div className="flex-1 h-px bg-black" />
         <div className="size-0.75 rounded-full bg-black rotate-45" />
