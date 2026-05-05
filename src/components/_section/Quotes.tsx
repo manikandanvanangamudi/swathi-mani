@@ -1,167 +1,96 @@
 import RevealText from "../ui/RevealText";
-import { Luxurious_Script, Playfair_Display } from "next/font/google";
+import { Luxurious_Script, Cormorant_Garamond } from "next/font/google";
 
-const secondFont = Luxurious_Script({
+const luxFont = Luxurious_Script({
   subsets: ["latin"],
   weight: "400",
 });
 
-const playfair = Playfair_Display({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const Quotes = () => {
-  const chapters = [
-    {
-      number: "ONE",
-      title: "The Beginning",
-      subtitle: "Two Strangers, One Moment",
-      description: "We met without knowing that life was quietly writing our story.",
-    },
-    {
-      number: "TWO",
-      title: "The Spark",
-      subtitle: "Conversations & Endless Laughter",
-      description: "What started as simple conversations turned into endless laughter and comfort.",
-    },
-    {
-      number: "THREE",
-      title: "The Bond",
-      subtitle: "When Friendship Became Home",
-      description: "Friendship became comfort, and comfort became home — a rare place to be ourselves.",
-    },
-    {
-      number: "FOUR",
-      title: "The Realization",
-      subtitle: "Choosing Each Other for Life",
-      description: "We realized we weren't just choosing each other for the moment — but for life.",
-    },
-    {
-      number: "FIVE",
-      title: "Destiny",
-      subtitle: "What Felt Natural, Now Feels Written",
-      description: "What felt natural from the beginning now feels like destiny written by the stars.",
-    },
-  ];
-
   return (
-    <div className="w-full bg-gradient-to-b from-stone-50 via-amber-50 to-stone-50 text-gray-950">
-      {/* Main Title Section */}
-      <div className="w-full px-4 py-12 md:py-16 flex flex-col items-center justify-center">
-        <div className="w-full max-w-3xl flex flex-col gap-8">
-          <div className="text-center">
-            <h1 className={`text-4xl md:text-6xl font-bold mb-4 ${secondFont.className}`}>
-              <RevealText
-                text="Our Story"
-                duration={0.3}
-                stagger={0.1}
-                trigger="viewport"
-              />
-            </h1>
+    <div className="relative w-full min-h-[50vh] bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white overflow-hidden">
+      {/* Decorative Background Elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl opacity-30" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl opacity-30" />
+      
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-[50vh] px-4 py-16">
+        <div className="w-full max-w-2xl flex flex-col gap-12">
+          
+          {/* Decorative Top Element */}
+          <div className="flex items-center justify-center gap-4">
+            <div className="h-px w-12 bg-gradient-to-r from-transparent to-yellow-400" />
+            <div className="w-2 h-2 rounded-full bg-yellow-300 shadow-lg shadow-yellow-500/50" />
+            <div className="h-px w-12 bg-gradient-to-l from-transparent to-yellow-400" />
           </div>
 
-          <div className="text-center">
-            <p className="text-base md:text-lg text-gray-700 italic">
-              <RevealText
-                text="Life was quietly writing our story — we just had to live it"
-                duration={0.3}
-                stagger={0.1}
-                trigger="viewport"
-              />
-            </p>
-          </div>
-
-          {/* Timeline Divider */}
-          <div className="flex justify-center">
-            <div className="h-px w-10 bg-amber-300" />
-          </div>
-        </div>
-      </div>
-
-      {/* Chapters */}
-      <div className="w-full px-4 py-8 md:py-12">
-        <div className="w-full max-w-3xl mx-auto flex flex-col gap-12">
-          {chapters.map((chapter, index) => (
-            <div key={index} className="flex flex-col gap-3">
-              {/* Chapter Header */}
-              <p className="text-xs md:text-sm font-bold text-amber-700 tracking-widest">
-                <RevealText
-                  text={`CHAPTER ${chapter.number} · ${chapter.title.toUpperCase()}`}
-                  duration={0.3}
-                  stagger={0.05}
-                  trigger="viewport"
-                />
-              </p>
-
-              <h3 className={`text-2xl md:text-3xl font-semibold text-gray-950 ${playfair.className}`}>
-                <RevealText
-                  text={chapter.subtitle}
-                  duration={0.3}
-                  stagger={0.08}
-                  trigger="viewport"
-                />
-              </h3>
-
-              {/* Chapter Description */}
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                <RevealText
-                  text={chapter.description}
-                  duration={0.3}
-                  stagger={0.02}
-                  trigger="viewport"
-                />
-              </p>
-
-              {/* Divider between chapters */}
-              {index < chapters.length - 1 && (
-                <div className="flex justify-center py-6">
-                  <div className="h-px w-6 bg-amber-200" />
+          {/* Main Card */}
+          <div className="group relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-amber-600/15 rounded-3xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            
+            <div className="relative bg-gradient-to-br from-slate-800/70 via-slate-800/50 to-slate-900/70 backdrop-blur-xl border border-yellow-400/40 rounded-3xl p-12 md:p-16 shadow-2xl hover:border-yellow-400/70 hover:shadow-yellow-500/30 transition-all duration-500">
+              
+              <div className="flex flex-col gap-8">
+                {/* Ornamental Divider Top */}
+                <div className="flex items-center justify-center gap-3">
+                  <div className="h-px w-8 bg-gradient-to-r from-transparent to-yellow-400/60" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-yellow-300" />
+                  <div className="h-px w-8 bg-gradient-to-l from-transparent to-yellow-400/60" />
                 </div>
-              )}
+
+                {/* Main Verse */}
+                <p className={`text-xl md:text-2xl font-semibold text-center text-yellow-50 leading-relaxed tracking-wide`}>
+                  <RevealText
+                    text="Two souls walking as one."
+                    duration={0.4}
+                    stagger={0.15}
+                    mode="sentence"
+                    trigger="viewport"
+                  />
+                </p>
+
+                {/* Description */}
+                <p className={`text-base md:text-lg text-center text-yellow-100/90 leading-relaxed font-light ${cormorant.className}`}>
+                  <RevealText
+                    text="May our journey be filled with harmony, love, and shared purpose — as we walk together in the seven sacred steps."
+                    duration={0.4}
+                    stagger={0.08}
+                    mode="sentence"
+                    trigger="viewport"
+                  />
+                </p>
+
+                {/* Ornamental Divider Bottom */}
+                <div className="flex items-center justify-center gap-3">
+                  <div className="h-px w-8 bg-gradient-to-r from-transparent to-yellow-400/60" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-yellow-300" />
+                  <div className="h-px w-8 bg-gradient-to-l from-transparent to-yellow-400/60" />
+                </div>
+
+                {/* Tagline */}
+                <p className={`text-lg md:text-xl text-center text-yellow-200 italic font-light tracking-wide ${luxFont.className}`}>
+                  <RevealText
+                    text="From Sand to Snow, forever we GO"
+                    duration={0.4}
+                    stagger={0.12}
+                    mode="sentence"
+                    trigger="viewport"
+                  />
+                </p>
+              </div>
             </div>
-          ))}
-
-          {/* Forever Section */}
-          <div className="flex flex-col gap-4 pt-8 border-t-2 border-amber-200">
-            <p className="text-xs md:text-sm font-bold text-amber-700 tracking-widest pt-4">
-              <RevealText
-                text="FOREVER · MAY 3, 2026"
-                duration={0.3}
-                stagger={0.05}
-                trigger="viewport"
-              />
-            </p>
-
-            <h3 className={`text-2xl md:text-3xl font-semibold text-gray-950 ${playfair.className}`}>
-              <RevealText
-                text="Stepping Into Our Forever"
-                duration={0.3}
-                stagger={0.08}
-                trigger="viewport"
-              />
-            </h3>
-
-            <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-              <RevealText
-                text="With hearts full of gratitude and love, we step into our forever together."
-                duration={0.3}
-                stagger={0.02}
-                trigger="viewport"
-              />
-            </p>
           </div>
 
-          {/* Closing Tagline */}
-          <div className="flex justify-center pt-8 pb-8">
-            <p className={`text-2xl md:text-3xl italic text-amber-900 ${secondFont.className}`}>
-              <RevealText
-                text="From Sand to Snow, forever we GO"
-                duration={0.3}
-                stagger={0.1}
-                trigger="viewport"
-              />
-            </p>
+          {/* Decorative Bottom Element */}
+          <div className="flex items-center justify-center gap-4">
+            <div className="h-px w-12 bg-gradient-to-r from-transparent to-yellow-400" />
+            <div className="w-2 h-2 rounded-full bg-yellow-300 shadow-lg shadow-yellow-500/50" />
+            <div className="h-px w-12 bg-gradient-to-l from-transparent to-yellow-400" />
           </div>
         </div>
       </div>
