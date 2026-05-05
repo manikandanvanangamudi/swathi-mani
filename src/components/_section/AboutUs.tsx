@@ -14,7 +14,7 @@ const AboutUs = () => {
         <div className="flex flex-col justify-around px-4">
           <p className="text-xs font-bold md:text-2xl text-center">
             <RevealText
-              text={"Assalamu’alaikum"}
+              text={"Coming Soon…"}
               duration={0.3}
               stagger={0.15}
               mode="sentence"
@@ -100,7 +100,7 @@ const AboutUs = () => {
                   className={`font-bold text-3xl md:text-6xl ${secondFont.className} font-bold`}
                 >
                   <RevealText
-                    text={`Cindia Dwiseptira Rikaren`}
+                    text={`Swathi Venkatesh`}
                     duration={0.3}
                     stagger={0.15}
                     delay={0.4}
@@ -111,7 +111,7 @@ const AboutUs = () => {
 
                 <h4 className="text-xs md:text-2xl text-gray-600">
                   <RevealText
-                    text={`18.09.1999`}
+                    text={`05.01.1995`}
                     duration={0.3}
                     stagger={0.15}
                     delay={0.4}
@@ -119,17 +119,6 @@ const AboutUs = () => {
                     trigger="viewport"
                   />
                 </h4>
-
-                <h3 className="text-[8px] md:text-2xl text-gray-500 mt-2">
-                  <RevealText
-                    text={`Putri Bungsu Bpk Sukardiansyah & Ibu Zalrita Retno Dewi`}
-                    duration={0.3}
-                    stagger={0.15}
-                    delay={0.4}
-                    mode={"sentence"}
-                    trigger="viewport"
-                  />
-                </h3>
               </div>
             </div>
             <div className="col-start-2"></div>
@@ -165,7 +154,7 @@ const AboutUs = () => {
                     className={`font-bold text-3xl md:text-6xl ${secondFont.className} font-black`}
                   >
                     <RevealText
-                      text={`Robby Bagus Setiawan`}
+                      text={`Manikandan Vanangamudi`}
                       duration={0.3}
                       stagger={0.15}
                       delay={0.4}
@@ -176,7 +165,7 @@ const AboutUs = () => {
 
                   <h4 className="text-xs md:text-2xl text-gray-600">
                     <RevealText
-                      text={`10.08.1999`}
+                      text={`28.02.1991`}
                       duration={0.3}
                       stagger={0.15}
                       delay={0.4}
@@ -184,17 +173,6 @@ const AboutUs = () => {
                       trigger="viewport"
                     />
                   </h4>
-
-                  <h3 className="text-[8px] md:text-2xl text-gray-500 mt-1">
-                    <RevealText
-                      text={`Putra Bungsu Bpk Amir & Ibu Suwarsih`}
-                      duration={0.3}
-                      stagger={0.15}
-                      delay={0.4}
-                      mode={"sentence"}
-                      trigger="viewport"
-                    />
-                  </h3>
                 </div>
               </div>
               <div className="w-[40%] flex flex-col justify-between">
