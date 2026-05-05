@@ -54,7 +54,7 @@ const Hero = ({ revealed = false }: HeroProps) => {
           src="/Hero.webp"
           alt="ring"
           fill
-          className="object-contain"
+          className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/50 z-10" />
