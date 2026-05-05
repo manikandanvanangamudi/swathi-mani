@@ -265,7 +265,7 @@ const DetailVenue = () => {
 
                 <div className="w-full h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-yellow-400/30 group/map hover:border-yellow-400/60 transition-all duration-300">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7774.908011476764!2d77.57399257572354!3d13.006735114105656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae162a55555555%3A0x97cd499d32daef68!2sTTD%20Kalyana%20Mantapa!5e0!3m2!1sen!2sus!4v1777953777691!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7774.908011476764!2d77.571164!3d13.005122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae162a55555555%3A0x97cd499d32daef68!2sTTD%20Kalyana%20Mantapa!5e0!3m2!1sen!2sus!4v1777953777691!5m2!1sen!2sus"
                     className="w-full h-full border-0 group-hover/map:opacity-95 transition-opacity duration-300"
                     allowFullScreen
                   />
@@ -273,7 +273,7 @@ const DetailVenue = () => {
 
                 <div className="flex justify-center pt-4">
                   <a 
-                    href="https://maps.app.goo.gl/L4tebJBs7Hg1SZ8H9"
+                    href="https://maps.app.goo.gl/?q=13.005122,77.571164"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
