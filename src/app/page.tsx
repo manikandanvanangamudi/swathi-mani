@@ -9,7 +9,6 @@ import Loader from "@/components/Loader";
 import AboutUs from "@/components/_section/AboutUs";
 import DetailVenue from "@/components/_section/DetailVenue";
 import ScrollSnakeLine from "@/components/ui/Snakeline";
-import Gift from "@/components/_section/Gift";
 import RSVP from "@/components/_section/RSVP";
 import Footer from "@/components/_section/Footer";
 import Quotes from "@/components/_section/Quotes";
@@ -125,7 +124,6 @@ export default function Home() {
               <div className="size-0.75 rounded-full bg-white/50 rotate-45" />
               <div className="flex-1 h-px bg-white/50" />
             </div>
-            <Gift />
             <div className="flex items-center gap-3 w-35 opacity-100 scale-x-100 mx-auto">
               <div className="flex-1 h-px bg-white/50" />
               <div className="size-0.75 rounded-full bg-white/50 rotate-45" />
