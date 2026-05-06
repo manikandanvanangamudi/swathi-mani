@@ -183,16 +183,16 @@ export default function WeddingLoader({ onComplete }: WeddingLoaderProps) {
           onClick={handleOpenInvitation}
           className={[
             "group mt-3 flex items-center gap-3 px-7 py-2.5",
-            "border border-yellow-500/40 rounded-full",
-            `${cormorant.className} text-yellow-400/70 tracking-[0.25em] text-[clamp(11px,1.3vw,13px)] uppercase font-light`,
+            "border border-yellow-400 bg-yellow-400 rounded-full",
+            `${cormorant.className} text-black tracking-[0.25em] text-[clamp(11px,1.3vw,13px)] uppercase font-light`,
             "transition-all duration-700 ease-out",
-            "hover:border-yellow-400/70 hover:text-yellow-400 hover:gap-4",
+            "hover:bg-yellow-300 hover:border-yellow-300 hover:gap-4",
             isReveal
               ? "opacity-100 translate-y-0 delay-[480ms] pointer-events-auto cursor-pointer"
               : "opacity-0 translate-y-6 pointer-events-none",
           ].join(" ")}
         >
-          <span className="transition-opacity duration-500 opacity-50 group-hover:opacity-100">
+          <span className="transition-opacity duration-500 opacity-70 group-hover:opacity-100">
             <EnvelopeIcon />
           </span>
           Open Invitation
