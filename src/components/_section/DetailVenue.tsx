@@ -273,7 +273,7 @@ const DetailVenue = () => {
 
                 <div className="flex justify-center pt-4">
                   <a 
-                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7774.908011476764!2d77.571164!3d13.005122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae162a55555555%3A0x97cd499d32daef68!2sTTD%20Kalyana%20Mantapa!5e0!3m2!1sen!2sus!4v1777953777691!5m2!1sen!2sus"
+                    href="https://maps.google.com/?cid=10938480009464704872&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=en&gl=US&source=embed"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
