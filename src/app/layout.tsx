@@ -11,21 +11,21 @@ const libre = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "Undangan Pernikahan: Cindia & Robby",
+  title: "Wedding Invitation: Swathi & Mani",
   description:
     "Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami.",
   openGraph: {
-    title: "Undangan Pernikahan: Cindia & Robby",
+    title: "Wedding Invitation: Swathi & Mani",
     description:
       "Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami.",
-    url: "https://cindia-and-robby.storyofbari.com/", // Edit dengan URL deploy Anda nantinya
-    siteName: "Undangan Pernikahan Cindia & Robby",
+    url: "https://swathi-mani-fnib.vercel.app/", // Edit dengan URL deploy Anda nantinya
+    siteName: "Wedding Invitation: Swathi & Mani",
     images: [
       {
         url: "/heart.png",
         width: 1200,
         height: 630,
-        alt: "Cindia & Robby Wedding",
+        alt: "Swathi & Mani Wedding",
       },
     ],
     locale: "id_ID",
