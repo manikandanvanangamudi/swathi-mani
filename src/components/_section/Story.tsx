@@ -2,8 +2,8 @@ import RevealText from "@/components/ui/RevealText";
 import ImageSlideshow from "@/components/ui/ImageSlideshow";
 
 const IMAGES = [
-  "/Slideshow_1.webp",
   "/Slideshow_2.webp",
+  "/Slideshow_1.webp",
   "/Slideshow_3.webp",
   "/Slideshow_4.webp",
 ];
