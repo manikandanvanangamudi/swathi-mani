@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import CountUp from "@/components/ui/CountUp";
 import { Parisienne, Cormorant_Garamond } from "next/font/google";
 
@@ -121,6 +122,39 @@ export default function WeddingLoader({ onComplete }: WeddingLoaderProps) {
 
       {/* ── REVEAL CONTENT ── */}
       <div className="flex flex-col items-center gap-5 px-8 text-center">
+        {/* Decorative Images */}
+        <div
+          className={[
+            "flex items-center justify-center gap-6 mb-4",
+            "transition-all duration-700 ease-out",
+            isReveal
+              ? "opacity-100 translate-y-0 delay-0"
+              : "opacity-0 translate-y-6",
+          ].join(" ")}
+        >
+          {/* Left Image - Ganesh */}
+          <div className="w-20 h-20 md:w-24 md:h-24 relative">
+            <Image
+              src="/Ganesh.png"
+              alt="Ganesh"
+              width={100}
+              height={100}
+              className="w-full h-full object-contain"
+            />
+          </div>
+
+          {/* Right Image - Sai Baba */}
+          <div className="w-20 h-20 md:w-24 md:h-24 relative">
+            <Image
+              src="/SaiBaba.png"
+              alt="Sai Baba"
+              width={100}
+              height={100}
+              className="w-full h-full object-contain"
+            />
+          </div>
+        </div>
+
         {/* "Welcome to Our Wedding" — fade in first */}
         <p
           className={[
