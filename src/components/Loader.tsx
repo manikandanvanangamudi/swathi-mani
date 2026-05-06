@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
 import CountUp from "@/components/ui/CountUp";
 import { Parisienne, Cormorant_Garamond } from "next/font/google";
 
@@ -122,3 +121,83 @@ export default function WeddingLoader({ onComplete }: WeddingLoaderProps) {
 
       {/* ── REVEAL CONTENT ── */}
       <div className="flex flex-col items-center gap-5 px-8 text-center">
+        {/* "Welcome to Our Wedding" — fade in first */}
+        <p
+          className={[
+            `${cormorant.className} text-lg italic text-yellow-400 tracking-[0.3em] uppercase`,
+
+            "transition-all duration-700 ease-out",
+            isReveal
+              ? "opacity-100 translate-y-0 delay-0"
+              : "opacity-0 translate-y-6",
+          ].join(" ")}
+        >
+          Welcome to Our Wedding
+        </p>
+
+        {/* Divider */}
+        <div
+          className={[
+            "flex items-center gap-3 w-35",
+            "transition-all duration-700 ease-out",
+            isReveal
+              ? "opacity-100 scale-x-100 delay-[120ms]"
+              : "opacity-0 scale-x-0",
+          ].join(" ")}
+        >
+          <div className="flex-1 h-px bg-yellow-500/40" />
+          <div className="w-0.75 h-0.75 rounded-full bg-yellow-500 rotate-45" />
+          <div className="flex-1 h-px bg-yellow-500/40" />
+        </div>
+
+        {/* "Swathi & Mani" — main title */}
+        <h1
+          className={[
+            `${parisienne.className} text-yellow-400 leading-[1.1]`,
+            "text-[clamp(48px,11vw,92px)]",
+            "transition-all duration-700 ease-out",
+            isReveal
+              ? "opacity-100 translate-y-0 delay-[220ms]"
+              : "opacity-0 translate-y-6",
+          ].join(" ")}
+        >
+          Swathi &amp; Mani
+        </h1>
+
+        {/* Date */}
+        <p
+          className={[
+            `${cormorant.className} text-yellow-400 tracking-[0.35em] text-xl`,
+
+            "transition-all duration-700 ease-out",
+            isReveal
+              ? "opacity-100 translate-y-0 delay-[340ms]"
+              : "opacity-0 translate-y-6",
+          ].join(" ")}
+        >
+          17 · June · 2026
+        </p>
+
+        {/* Open Invitation button */}
+        <button
+          onClick={handleOpenInvitation}
+          className={[
+            "group mt-3 flex items-center gap-3 px-7 py-2.5",
+            "border border-yellow-400 bg-yellow-400 rounded-full",
+            `${cormorant.className} text-black tracking-[0.25em] text-[clamp(11px,1.3vw,13px)] uppercase font-light`,
+            "transition-all duration-700 ease-out",
+            "hover:bg-yellow-300 hover:border-yellow-300 hover:gap-4",
+            isReveal
+              ? "opacity-100 translate-y-0 delay-[480ms] pointer-events-auto cursor-pointer"
+              : "opacity-0 translate-y-6 pointer-events-none",
+          ].join(" ")}
+        >
+          <span className="transition-opacity duration-500 opacity-70 group-hover:opacity-100">
+            <EnvelopeIcon />
+          </span>
+          Open Invitation
+        </button>
+      </div>
+    </div>
+  );
+}
